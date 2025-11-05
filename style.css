@@ -1,0 +1,110 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+header {
+  background-color: #222;
+  padding: 15px;
+}
+
+h1 { margin: 10px 0; }
+
+input {
+  padding: 8px;
+  width: 220px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover { background-color: #e84118; }
+
+#categories { margin: 20px 0; }
+
+#movieContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.movie:hover { transform: scale(1.05); }
+
+.movie img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+/* MODAL STYLING */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  margin: 5% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close:hover { color: #fff; }
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rating {
+  font-weight: bold;
+  color: #ffb347;
+}
+
+.popcorn {
+  font-size: 22px;
+  margin-top: 8px;
+}
