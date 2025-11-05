@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Explorer</h1>
+    <input type="text" id="searchInput" placeholder="Search movies..." />
+    <button id="searchBtn">Search</button>
+  </header>
+
+  <section id="categories">
+    <h2>Popular Categories</h2>
+    <div class="buttons">
+      <button onclick="loadCategory('action')">Action</button>
+      <button onclick="loadCategory('comedy')">Comedy</button>
+      <button onclick="loadCategory('horror')">Horror</button>
+      <button onclick="loadCategory('romance')">Romantic</button>
+      <button onclick="loadCategory('animation')">Animated</button>
+      <button onclick="loadCategory('sci-fi')">Sci-Fi</button>
+    </div>
+  </section>
+
+  <main id="movieContainer"></main>
+
+  <!-- Movie Details Modal -->
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Developed by: Soumitra De</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
